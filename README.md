@@ -5,9 +5,10 @@ A third iteration of my portfolio using 3D animations!
 Check out my project! https:
 
 ## Technologies
-- Three.js
+- React
 - Tailwind CSS
+- Three.js
 - Framer Motion
 - EmailJS
-- Vite.js
+- Vite
 - Dokku
