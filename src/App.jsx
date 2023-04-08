@@ -16,6 +16,9 @@ const App = () => {
         <Works />
         <div className="relative z-0">
           <Contact />
+          <div className="flex flex-col text-center">
+              <p>V3 rebuilt with 3D Animations.</p>
+          </div>
           <StarsCanvas />
         </div>
       </div>
