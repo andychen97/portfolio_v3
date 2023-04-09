@@ -20,7 +20,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={ computer.scene }
         scale={ isMobile ? 0.50 : 0.80 }
-        position={ isMobile ? [0.7, 1, -0.60] : [1, -1, -1] }
+        position={ isMobile ? [0.7, 1, -0.60] : [1, -0.75, -1] }
         rotation={[0, -0.2, -0.1]} />
     </mesh>
   )
@@ -35,7 +35,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener to check for screen size
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
+    const mediaQuery = window.matchMedia('(max-width: 499px)');
     // set initial value of isMobile state variable
     setIsMobile(mediaQuery.matches);
     // define a callback function to handle changes to the media query
@@ -53,7 +53,7 @@ const ComputersCanvas = () => {
         <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
-          autoRotateSpeed={0.5}
+          autoRotateSpeed={0.2}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} />
