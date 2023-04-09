@@ -6,11 +6,11 @@ const styles = {
   heroHeadHi:
     'xs:text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px] xl:text-[14px]',
   heroHeadText:
-    'font-calibre xs:text-[25px] sm:text-[35px] md:text-[45px] lg:text-[55px] xl:text-[60px] mt-2',
+    'font-calibre xs:text-[25px] sm:text-[35px] md:text-[45px] lg:text-[55px] xl:text-[60px]',
   heroSubText:
     'xs:text-[16px] sm:text-[16px] md:text-[18px] xl:text-[20px]',
   heroSubWidth:
-    'xs:w-[90%] sm:w-[85%] md:w-[80%] w-[70%]',
+    'xs:w-[100%] sm:w-[85%] md:w-[80%] w-[65%]',
 
   sectionHeadText:
     'text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]',

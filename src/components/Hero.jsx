@@ -4,15 +4,15 @@ import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
-    <section className='h-screen'>
-      <div className={`${styles.paddingX} w-full mx-auto pt-[10%]`}>
+    <section className='relative h-screen'>
+      <div className={`${styles.paddingX} mx-auto sm:ml-2 md:ml-3 lg:ml-4 xl:ml-5 xs:pt-[20%] pt-[10%]`}>
         <div className={`xs:mt-5 mt-2 inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-          <div className='flex flex-col justify-center items-center mt-5'>
+          <div className='xs:hidden flex flex-col justify-center items-center mt-5'>
             <div className='w-5 h-5 rounded-full bg-highlight'/>
-            <div className='w-1 sm:h-80 h-40 green-gradient' />
+            <div className='w-1 sm:h-56 h-40 green-gradient' />
           </div>
-          <div>
-            <p className={`${styles.heroHeadHi} font-sfmono text-highlight mt-5`}>Hi, my name is</p>
+          <div className='xs:text-center sm:mt-2 text-start'>
+            <p className={`${styles.heroHeadHi} font-sfmono text-highlight xs:mt-7 mt-5`}>Hi, my name is</p>
             <h1 className={`${styles.heroHeadText} text-off-white text-6xl font-bold mt-5`}>Andy Chen.</h1>
             <h1 className={`${styles.heroHeadText} text-off-grey text-6xl font-bold mt-4`}>I am a software developer.</h1>
             <p className={`${styles.heroSubText} ${styles.heroSubWidth} font-calibre mt-2 text-off-grey font-light leading-relaxed`}>
@@ -31,21 +31,6 @@ const Hero = () => {
       </div>
       <div className='relative w-full h-[55vh]'>
         <ComputersCanvas />
-      </div>
-      <div className='xs:botom-10 bottom-0 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.dev
-              animate={{ y: [0, 24, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: 'loop'
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
       </div>
     </section>
   )
