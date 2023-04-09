@@ -15,8 +15,8 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
-        offWhite: "#ccd6f6",
-        offGrey: "#8892b0",
+        "off-white": "#ccd6f6",
+        "off-grey": "#8892B0",
         highlight: "#62f8d5"
       },
       boxShadow: {
@@ -29,9 +29,9 @@ module.exports = {
         'lg': { 'min': '901px', 'max': '1025px' },
         'xl': { 'min': '1170px'}
       },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-      },
+      // backgroundImage: {
+      //   "hero-pattern": "url('/src/assets/herobg.png')",
+      // },
     },
   },
   plugins: [],

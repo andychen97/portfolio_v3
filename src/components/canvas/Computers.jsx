@@ -3,7 +3,6 @@ import { Suspense, useEffect, useState } from 'react';
 //empty canvas to let us place something on it.
 import { Canvas } from '@react-three/fiber';
 
-
 //helps us draw on canvas, useGLTF lets us import 3D models.
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
@@ -15,14 +14,14 @@ const Computers = ({ isMobile }) => {
     //when working with 3D files we use mesh instead of divs.
     // need hemisphereLight to see the animation
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={2.0} groundColor='white' />
       <pointLight intensity={1} />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
       <primitive
-        object={computer.scene}
-        scale={ isMobile ? 0.55 : 0.60}
-        position={isMobile ? [0.7, -2.5, -1.5] : [0, -2.5, -1]}
-        rotation={[-0.01, -0.2, -0.1]} />
+        object={ computer.scene }
+        scale={ isMobile ? 0.55 : 0.80 }
+        position={ isMobile ? [0.7, -2.5, -1.5] : [1, -1, -1] }
+        rotation={[0, -0.2, -0.1]} />
     </mesh>
   )
 }
@@ -51,8 +50,12 @@ const ComputersCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}>
         <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-          <Computers isMobile={isMobile}/>
+        <OrbitControls
+          autoRotate
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2} />
+          <Computers isMobile={isMobile} />
         </Suspense>
         <Preload all />
     </Canvas>
