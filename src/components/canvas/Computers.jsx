@@ -19,8 +19,8 @@ const Computers = ({ isMobile }) => {
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
       <primitive
         object={ computer.scene }
-        scale={ isMobile ? 0.55 : 0.80 }
-        position={ isMobile ? [0.7, -2.5, -1.5] : [1, -1, -1] }
+        scale={ isMobile ? 0.50 : 0.80 }
+        position={ isMobile ? [0.7, 1, -0.60] : [1, -1, -1] }
         rotation={[0, -0.2, -0.1]} />
     </mesh>
   )
@@ -45,13 +45,15 @@ const ComputersCanvas = () => {
     return () => mediaQuery.removeEventListener('change', handleMediaQueryChange);
   })
   return (
-    <Canvas frameLoop='demand'
+    <Canvas
+      frameLoop='demand'
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}>
         <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
+          autoRotateSpeed={0.5}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} />

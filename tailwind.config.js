@@ -23,11 +23,11 @@ module.exports = {
         card: "0px 35px 120px -15px #211e35",
       },
       screens: {
-        'xs': { 'min': '375px', 'max': '499px' },
+        'xs': { 'max': '499px' },
         'sm': { 'min': '500px', 'max': '767px' },
         'md': { 'min': '768px', 'max': '900px' },
         'lg': { 'min': '901px', 'max': '1025px' },
-        'xl': { 'min': '1170px'}
+        'xl': { 'min': '1026px'}
       },
       // backgroundImage: {
       //   "hero-pattern": "url('/src/assets/herobg.png')",
