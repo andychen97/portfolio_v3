@@ -25,15 +25,15 @@ const Navbar = () => {
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center p-2 fixed top-0 z-20 bg-primary`}>
-      <div className="w-full flex justify-between items-center max-w-10xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to='/'
-          className="flex items-center gap-2"
+          className="flex justify-start items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-            <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
+          <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
         </Link>
         <ul className="list-none xs:hidden sm:hidden flex flex-row gap-6 items-center">
           {navLinks.map((link) => (
