@@ -1,5 +1,5 @@
 const styles = {
-  paddingX: "sm:px-4 md:px-6 lg:px-10 px-14",
+  paddingX: "xs:px-3 sm:px-4 md:px-6 lg:px-10 px-14",
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-16 px-6 sm:py-16 py-10",
 

@@ -35,7 +35,7 @@ const Navbar = () => {
           }}>
             <img src={logo} alt='logo' className='w-12 h-12 object-contain' />
         </Link>
-        <ul className="list-none sm:hidden flex flex-row gap-6 items-center">
+        <ul className="list-none xs:hidden sm:hidden flex flex-row gap-6 items-center">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -51,7 +51,7 @@ const Navbar = () => {
 
 
 
-        <div className='hidden sm:flex flex-1 justify-end items-center'>
+        <div className='hidden xs:flex sm:flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
             alt='menu'
