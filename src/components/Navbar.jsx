@@ -39,7 +39,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.title ? "text-highlight" : "text-offWhite"} hover:text-highlight text-[12px] font-sfmono cursor-pointer pt-0.5`}
+              className={`${active === link.title ? "text-highlight" : "text-off-white"} hover:text-highlight text-[12px] font-sfmono cursor-pointer pt-0.5`}
               onClick={() => setActive(link.title)}>
               <a href={`#${link.id}`}><span className='text-highlight'>{link.number}. </span>{link.title}</a>
             </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${active === link.title ? "text-highlight" : "text-offWhite"} font-sfmono cursor-pointer text-[14px]`}
+                  className={`${active === link.title ? "text-highlight" : "text-off-white"} font-sfmono cursor-pointer text-[14px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
