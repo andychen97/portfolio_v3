@@ -2,7 +2,7 @@
 
 A third iteration of my portfolio using 3D animations!
 
-Check out my project! https:
+Check out my project! https://ACDesigns.dev/
 
 ## Technologies
 - React
@@ -12,3 +12,5 @@ Check out my project! https:
 - EmailJS
 - Vite
 - Dokku
+
+<img src='https://raw.githubusercontent.com/andychen97/portfolio_v3/main/src/assets/portfoliov3.png' alt='homepage view'>
