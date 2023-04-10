@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import livelink from "./livelink.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -26,9 +27,11 @@ import skyline from "./company/skyline.png";
 import stocks from "./company/stocks.png";
 import thirdstreet from "./company/thirdstreet.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import codejournal from "./codejournal.png";
+import cravingcreations from "./cravingcreations.png";
+import foodfinder from "./foodfinder.png";
+import portfoliov2 from "./portfoliov2.png";
+import portfoliov3 from "./portfoliov3.png";
 
 export {
   logo,
@@ -37,6 +40,7 @@ export {
   mobile,
   web,
   github,
+  livelink,
   menu,
   close,
   css,
@@ -56,7 +60,9 @@ export {
   skyline,
   stocks,
   thirdstreet,
-  carrent,
-  jobit,
-  tripguide,
+  codejournal,
+  cravingcreations,
+  foodfinder,
+  portfoliov2,
+  portfoliov3
 };

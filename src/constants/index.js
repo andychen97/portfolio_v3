@@ -11,6 +11,7 @@ import {
   tailwind,
   nodejs,
   postgresql,
+  threejs,
   git,
   figma,
   docker,
@@ -19,10 +20,11 @@ import {
   skyline,
   stocks,
   thirdstreet,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  codejournal,
+  cravingcreations,
+  foodfinder,
+  portfoliov2,
+  portfoliov3
 } from "../assets";
 
 export const navLinks = [
@@ -192,67 +194,150 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Portfolio V3",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A third iteration of my portfolio to showcase my ability to learn and apply new technologies. I chose to experiment with 3D Animation (three.js), emailjs and TailwindCSS.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "three.js",
         color: "pink-text-gradient",
       },
+      {
+        name: "framermotion",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "emailjs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "purple-text-gradient",
+      }
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: portfoliov3,
+    live_link: "https://typescript.acdesigns.dev/",
+    source_code_link: "https://github.com/andychen97/portfolio_v3",
   },
   {
-    name: "Job IT",
+    name: "Portfolio V2",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "I  rebuilt my portfolio using TypeScript, React, and Vite for version 2, with a focus on improving user experience and accessibility. I plan to continue learning TypeScript as I believe it's essential to success in web development.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "vite",
         color: "pink-text-gradient",
       },
+      {
+        name: "dokku",
+        color: "yellow-text-gradient",
+      }
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: portfoliov2,
+    live_link: "https://typescript.acdesigns.dev/",
+    source_code_link: "https://github.com/andychen97/portfolio_v2",
   },
   {
-    name: "Trip Guide",
+    name: "Food Finder",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full-stack web application for food lovers to find restaurants utilizing Yelp's REST API. Some key features include pinpoint mapping (Leaflet API) and user accounts with Argon2 password hashing / salting.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "node.js",
         color: "green-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "postgreSQL",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "argon2",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "yelpAPI",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "dokku",
+        color: "light-blue-text-gradient",
+      },
+    ],
+    image: foodfinder,
+    live_link: "https://lfzfoodfinder.com/",
+    source_code_link: "https://github.com/andychen97/food-finder",
+  },
+  {
+    name: "Craving Creations",
+    description:
+      "A dynamic web application for food lovers to find and organize recipes. Through the process of creating this app, I have gained a greater level of comfort and proficiency in working with APIs, enabling me to utilize them with ease and confidence.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tastyAPI",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: cravingcreations,
+    live_link: "https://andychen97.github.io/craving-creations/",
+    source_code_link: "https://github.com/andychen97/craving-creations",
+  },
+  {
+    name: "Code Journal",
+    description:
+      'A CRUD application that allows users to log and view their entries. The experience of developing this app marked a significant milestone in my pursuit of a career as a software developer.',
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: codejournal,
+    live_link: "https://andychen97.github.io/code-journal/",
+    source_code_link: "https://github.com/andychen97/code-journal",
   },
 ];
 
