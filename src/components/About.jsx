@@ -40,7 +40,7 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-      <div className="flex flex-wrap">
+      <div className='flex flex-wrap'>
         <motion.p
           variant={fadeIn('', '', 0.1, 1)}
           className='xs:basis-full sm:basis-full xs:order-2 sm:order-2 order-1 basis-3/5 mt-4 text-secondary font-light text-[18px] leading-7'>
@@ -65,16 +65,16 @@ const About = () => {
           <br />
           Here are some technologies that I have been working with recently:
         </motion.p>
-        <div className="xs:basis-full sm:basis-full basis-2/5 xs:order-1 sm:order-1 order-2">
-          <div className="flex justify-center">
+        <div className='xs:basis-full sm:basis-full basis-2/5 xs:order-1 sm:order-1 order-2'>
+          <div className='flex justify-center'>
             <img src={Selfie} alt='selfie' className={styles.selfie} />
           </div>
         </div>
       </div>
-      <div className="mt-10">
+      <div className='mt-10'>
         <Tech />
       </div>
-      <div className="justify-center mt-20 flex flex-wrap gap-10">
+      <div className='justify-center mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
           ))}
