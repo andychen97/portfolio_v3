@@ -264,6 +264,65 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-text-fill-color: transparent;
 }
 
+.yellow-text-gradient {
+  background: #d4ec00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #d4ec00,
+      #dcf046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #d4ec00,
+      #dcf046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.orange-text-gradient {
+  background: #ff9d00;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #ff9d00,
+      #f07146);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #ff9d00,
+      #f07146);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-text-gradient {
+  background: #b500ec;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #b500ec,
+      #5c2e77);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #b500ec,
+      #5c2e77);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-blue-text-gradient {
+  background: #59f6ec;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top,
+      #59f6ec,
+      #339f97);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top,
+      #59f6ec,
+      #339f97);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

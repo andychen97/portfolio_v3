@@ -71,7 +71,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Tech />
+      <div className="mt-10">
+        <Tech />
+      </div>
       <div className="justify-center mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
