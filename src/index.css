@@ -370,11 +370,15 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .vertical-timeline-element-icon {
-  background: #ccd6f6 !important;
+  background: #FFFFFF !important;
   box-shadow:
-    0 0 0 4px #ccd6f6,
+    0 0 0 4px #FFFFFF,
     inset 0 2px 0 rgba(136, 146, 175, 0.08),
     0 3px 0 4px rgba(136, 146, 175, 0.05) !important;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  padding: 0 !important;
 }
 
 @keyframes mulShdSpin {

@@ -29,9 +29,6 @@ module.exports = {
         'lg': { 'min': '901px', 'max': '1025px' },
         'xl': { 'min': '1026px'}
       },
-      // backgroundImage: {
-      //   'hero-pattern': "url('/src/assets/herobg.png')",
-      // },
     },
   },
   plugins: [],
