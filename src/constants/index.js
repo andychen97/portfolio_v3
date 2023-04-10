@@ -14,10 +14,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  lfz,
+  sjsu,
+  skyline,
+  stocks,
+  thirdstreet,
   carrent,
   jobit,
   tripguide,
@@ -119,57 +120,74 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Web Dev Teacher's Assistant",
+    company_name: "LearningFuze",
+    location: "Irvine, CA",
+    icon: lfz,
+    iconBg: "#fff",
+    date: "August 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      'Lead TA sessions for a Full Stack Web Development course assisting instructors and students with daily assignments',
+      'Revamped and taught existing material on algorithms emphasizing real - world applications of runtime complexity',
+      'Explained and demonstrated beginner to intermediate methodologies such as procedural, functional, and OOP',
+      'Guided students toward efficient solutions in HTML, CSS, JS, React, Node.js, Express.js, PostgreSQL, etc.'
+    ]
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    title: "Full Stack Web Development Student",
+    company_name: "LearningFuze",
+    location: "Irvine, CA",
+    icon: lfz,
+    iconBg: "#fff",
+    date: "April 2022 - August 2022",
+    points: []
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Options Trader (Personal Financial Portfolio)",
+    company_name: "Self-employed",
+    location: "San Francisco, California",
+    icon: stocks,
+    iconBg: "#fff",
+    date: "January 2020 - January 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      'Actively managed and grew a portfolio with a 11 % monthly average ROI over 24 months',
+      'Traded derivatives and underlying securities based on technical and fundamental analysis',
+      'Performed Technical and Quantitative analysis to interpret chart patterns to pinpoint entry / exit for profitability',
+      'Analyze current market trends using information technology and market psychology to capitalize on movement within stocks, options, and index market'
+    ]
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Web Developer (Contracted Academic Project)",
+    company_name: "Third Street Community Center",
+    location: "San Jose, California",
+    icon: thirdstreet,
+    iconBg: "#fff",
+    date: "January 2020 - May 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      'Successfully led the redesign of the Third Street Community Center\'s website using HTML, CSS, and JavaScript',
+      'Improved the user experience by seamlessly integrating YouTube videos and photos into the website design',
+      'Improved the organization and clarity of various pages through the removal of unnecessary text',
+      'Facilitated online donations through the implementation of a donation page with PayPal integration'
+    ]
   },
+  {
+    title: "San Jose State University",
+    company_name: "BS - Business : Management Information Systems",
+    location: "San Jose, California",
+    icon: sjsu,
+    iconBg: "#fff",
+    date: "August 2018 - May 2020",
+    points: []
+  },
+  {
+    title: "Skyline College",
+    company_name: "AA - Business Administration",
+    location: "San Bruno, California",
+    icon: skyline,
+    iconBg: "#fff",
+    date: "August 2014 - May 2018",
+    points: []
+  }
 ];
 
 const projects = [
