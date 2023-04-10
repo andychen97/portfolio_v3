@@ -302,6 +302,22 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 
+.vertical-timeline-element-content {
+  box-shadow: none !important;
+}
+
+.vertical-timeline-element-content p {
+  font-weight: 300 !important;
+}
+
+.vertical-timeline-element-icon {
+  background: #ccd6f6 !important;
+  box-shadow:
+    0 0 0 4px #ccd6f6,
+    inset 0 2px 0 rgba(136, 146, 175, 0.08),
+    0 3px 0 4px rgba(136, 146, 175, 0.05) !important;
+}
+
 @keyframes mulShdSpin {
 
   0%,
