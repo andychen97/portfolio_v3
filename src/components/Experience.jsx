@@ -9,15 +9,9 @@ import { textVariant } from "../utils/motion";
 
 
 const ExperienceCard = ({ experience }) => {
-  let paddingTop;
-  let paddingBottom;
-  if (experience.points.length === 0) {
-    paddingTop = '20px';
-    paddingBottom = '0px';
-  } else {
-    paddingTop = '24px';
-    paddingBottom = '24px';
-  }
+  const paddingTop = experience.points.length === 0 ? '20px' : '24px'
+  const paddingBottom = experience.points.length === 0 ? '0px' : '24px'
+
   return (
     <VerticalTimelineElement
       contentStyle={{ background: 'rgb(30,37,48)', color: '#D0D1D2', 'padding-top': paddingTop, 'padding-bottom': paddingBottom}}
