@@ -3,17 +3,25 @@ import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { services } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { Tech } from '../components';
 import Selfie from '/selfie.jpg'
 
-//change titles in constants/index.js
 const ServiceCard = ({ index, title, icon}) => {
   return (
     <Tilt className='xs:w-full w-[250px]'>
       <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+        initial={{
+          x: -100,
+          opacity: 0
+        }}
+        transition={{
+          duration: 1
+        }}
+        animate={{
+          opacity: 1,
+          x: 0
+        }}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
         <div

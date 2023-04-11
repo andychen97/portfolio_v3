@@ -4,13 +4,22 @@ import { styles } from '../styles';
 import { livelink, github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return(
     <Tilt className='xs:w-full w-[360px]'>
       <motion.div
-        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+        initial={{
+          x: -100,
+          opacity: 0
+        }}
+        transition={{
+          duration: 1
+        }}
+        animate={{
+          opacity: 1,
+          x: 0
+        }}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
         <div
@@ -56,13 +65,35 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        initial={{
+          x: -100,
+          opacity: 0
+        }}
+        transition={{
+          duration: 1
+        }}
+        animate={{
+          opacity: 1,
+          x: 0
+        }}
+      >
         <p className={styles.sectionSubText}>Things I've built</p>
         <h2 className={styles.sectionHeadText}>My Projects.</h2>
       </motion.div>
       <div className='w-full flex'>
         <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
+          initial={{
+            x: 100,
+            opacity: 0
+          }}
+          transition={{
+            duration: 1
+          }}
+          animate={{
+            opacity: 1,
+            x: 0
+          }}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
            The following projects showcase my skills and experience through real-world
            examples of my work. Each project is briefly described with links to code
@@ -71,7 +102,7 @@ const Works = () => {
            effectively.
         </motion.p>
       </div>
-      <div className='mt-20 flex justify-center flex-wrap gap-10'>
+      <div className='xs:mt-10 mt-20 flex justify-center flex-wrap gap-10'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
