@@ -44,13 +44,33 @@ const ServiceCard = ({ index, title, icon}) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div initial={{
+        x: -100,
+        opacity: 0
+      }}
+        transition={{
+          duration: 1
+        }}
+        animate={{
+          opacity: 1,
+          x: 0
+        }}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <div className='flex flex-wrap'>
         <motion.p
-          variant={fadeIn('', '', 0.1, 1)}
+          initial={{
+            x: 100,
+            opacity: 0
+          }}
+          transition={{
+            duration: 1
+          }}
+          animate={{
+            opacity: 1,
+            x: 0
+          }}
           className='xs:basis-full sm:basis-full xs:order-2 sm:order-2 order-1 basis-3/5 mt-4 text-secondary font-light text-[18px] leading-7'>
           Hey! I am a software developer with a background in Information Systems
           and Web Development. I graduated from San Jose State University in the
