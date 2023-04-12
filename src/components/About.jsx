@@ -9,7 +9,7 @@ import Selfie from '/selfie.jpg'
 
 const ServiceCard = ({ index, title, icon}) => {
   return (
-    <Tilt className='xs:w-full w-[250px]'>
+    <Tilt className='xs:w-full w-[225px] lg:w-[250px]'>
       <motion.div
         initial={{
           x: -100,

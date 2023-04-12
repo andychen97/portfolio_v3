@@ -3,30 +3,34 @@ import { Navbar, Hero, About, Experience, Works, Contact, StarsCanvas, SideIcons
 
 const App = () => {
   return (
-    <>
+    <div className='bg-primary'>
       <BrowserRouter>
-        <div className='relative z-0 bg-primary'>
+        <div>
           <Navbar />
+        </div>
+        <div className='max-w-[1280px] my-0 mx-auto xs:px-0 sm:px-0 px-[80px]'>
           <Hero />
           <About />
           <Experience />
           <Works />
-          <div className='relative z-0'>
+        </div>
+        <div className='relative z-0'>
+          <div className='max-w-[1280px] my-0 mx-auto xs:px-0 sm:px-0 px-[80px]'>
             <Contact />
-            <div className='flex flex-col text-center'>
-              <p className='text-off-grey font-sfmono text-[14px] pb-5'>V3 rebuilt with 3D Animations.</p>
-            </div>
-            <StarsCanvas />
           </div>
+          <div className='flex flex-col text-center'>
+            <p className='text-off-grey font-sfmono text-[12px] pb-5'>V3 rebuilt with 3D Animations.</p>
+          </div>
+          <StarsCanvas />
         </div>
       </BrowserRouter>
-      <div className="xs:hidden sm:hidden fixed bottom-0 items-end">
+      <div className="xs:hidden sm:hidden flex fixed bottom-0 left-[5%] items-end">
         <SideIcons />
       </div>
-      <div className="xs:hidden sm:hidden fixed bottom-0 right-[5%] items-end">
+      <div className="xs:hidden sm:hidden flex fixed bottom-0 right-[5%] items-end">
         <SideEmail />
       </div>
-    </>
+    </div>
   )
 }
 
