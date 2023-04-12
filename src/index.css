@@ -174,7 +174,13 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 
-
+.line {
+  content: "";
+  width: 0;
+  height: 150px;
+  border: 1px solid #8892b0;
+  margin: 0 7px;
+}
 
 .black-gradient {
   background: #000000;

@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar, Hero, About, Experience, Works, Contact, StarsCanvas } from './components';
+import { Navbar, Hero, About, Experience, Works, Contact, StarsCanvas, SideIcons } from './components';
 
 const App = () => {
   return (
@@ -20,10 +20,10 @@ const App = () => {
           </div>
         </div>
       </BrowserRouter>
-      {/* <div className="flex">
+      <div className="flex fixed bottom-0 items-end">
         <SideIcons />
       </div>
-      <div className="flex">
+      {/* <div className="flex">
         <SideEmail />
       </div> */}
     </>
