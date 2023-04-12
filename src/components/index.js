@@ -7,6 +7,7 @@ import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
 import SideIcons from './SideIcons';
+import SideEmail from './SideEmail';
 
 export {
   Hero,
@@ -17,6 +18,7 @@ export {
   Works,
   Contact,
   SideIcons,
+  SideEmail,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

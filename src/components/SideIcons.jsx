@@ -6,7 +6,7 @@ import InstagramIcon from '../assets/instagram';
 export default function SideIcons() {
   return (
     <div className="flex">
-      <div className="basis-[10%] basis-[content]">
+      <div className="basis-[10%] basis-['content']">
         <ul>
           <li className='mx-0 mt-0 mb-[20px]'>
             <a href='https://github.com/andychen97'
