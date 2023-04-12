@@ -90,7 +90,9 @@ const Contact = () => {
             type='submit'>{loading ? 'Sending...' : 'Send'}</button>
         </form>
       </motion.div>
-      <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className='xl:flex-1 my-auto xs:h-[350px] sm:h-[350px] md:h-[450px] h-[500px]'>
         <EarthCanvas />
       </motion.div>
     </div>
