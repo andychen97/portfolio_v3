@@ -7,7 +7,7 @@ import { projects } from '../constants';
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return(
-    <Tilt className='xs:w-full w-[360px]'>
+    <Tilt className='xs:w-full md:w-[275px] w-[320px]'>
       <motion.div
         initial={{
           x: -100,

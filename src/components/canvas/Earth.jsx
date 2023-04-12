@@ -17,7 +17,6 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
-      frameloop='demand'
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,

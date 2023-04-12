@@ -5,8 +5,12 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import livelink from "./livelink.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
+import Menu from "./menu";
+import Exit from "./exit";
+
+import GitHubIcon from "./github";
+import LinkedinIcon from "./linkedin";
+import InstagramIcon from "./instagram";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -41,8 +45,11 @@ export {
   web,
   github,
   livelink,
-  menu,
-  close,
+  Menu,
+  Exit,
+  GitHubIcon,
+  LinkedinIcon,
+  InstagramIcon,
   css,
   docker,
   figma,
