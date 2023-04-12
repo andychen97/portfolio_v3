@@ -20,10 +20,10 @@ const App = () => {
           </div>
         </div>
       </BrowserRouter>
-      <div className="flex fixed bottom-0 items-end">
+      <div className="xs:hidden sm:hidden fixed bottom-0 items-end">
         <SideIcons />
       </div>
-      <div className="flex fixed bottom-0 right-[5%] items-end">
+      <div className="xs:hidden sm:hidden fixed bottom-0 right-[5%] items-end">
         <SideEmail />
       </div>
     </>
