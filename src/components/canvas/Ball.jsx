@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
+import { Decal, Float, OrbitControls, Preload, useTexture} from '@react-three/drei';
 import CanvasLoader from '../Loader';
 
 const Ball = (props) => {
@@ -12,6 +12,7 @@ const Ball = (props) => {
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
+        // <MeshPhongMaterial
           color='#fff8eb'
           polygonOffset
           polygonOffsetFactor={-5}
@@ -29,7 +30,10 @@ const Ball = (props) => {
 const BallCanvas =({ icon }) => {
   return(
     <Canvas
-      gl={{ preserveDrawingBuffer: true }}>
+      // frameloop="demand"
+      // gl={{ preserveDrawingBuffer: true }}
+      gl={{ powerPreference: "high-performance" }}
+      >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
