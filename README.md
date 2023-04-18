@@ -2,6 +2,8 @@
 
 A third iteration of my portfolio using 3D animations!
 
+Currently working on version 3.1 to optimize load time!
+
 Check out my project! https://ACDesigns.dev/
 
 ## Technologies
