@@ -34,13 +34,12 @@ const ComputersCanvas = () => {
       frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
-      // gl={{ preserveDrawingBuffer: true }}
-      gl={{ powerPreference: "high-performance" }}
+      gl={{ powerPreference: 'high-performance' }}
       >
         <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          // autoRotate
-          // autoRotateSpeed={0.2}
+          autoRotate
+          autoRotateSpeed={0.2}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2} />
