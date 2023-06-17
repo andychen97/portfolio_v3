@@ -5,7 +5,7 @@ import { livelink, github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, live_link, source_code_link }) => {
   return(
     <Tilt className='xs:w-full md:w-[275px] w-[320px]'>
       <motion.div
