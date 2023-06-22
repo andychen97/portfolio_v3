@@ -122,17 +122,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Web Dev Teacher's Assistant",
+    title: "Web Developer / TA",
     company_name: "LearningFuze",
     location: "Irvine, CA",
     icon: lfz,
     iconBg: "#fff",
     date: "August 2022 - Present",
     points: [
-      'Lead TA sessions for a Full Stack Web Development course assisting instructors and students with daily assignments',
-      'Revamped and taught existing material on algorithms emphasizing real - world applications of runtime complexity',
-      'Explained and demonstrated beginner to intermediate methodologies such as procedural, functional, and OOP',
-      'Guided students toward efficient solutions in HTML, CSS, JS, React, Node.js, Express.js, PostgreSQL, etc.'
+      'Led TA sessions for a Full Stack Web Development course, assisting instructors and students with daily assignments',
+      'Collaborated with lead developers to enhance course materials with the latest industry trends and best practices',
+      'Troubleshot technical issues and debugged code for students, ensuring smooth progress and a positive learning experience',
+      'Conducted code reviews, providing constructive feedback to help over 30 developers improve their coding skills and deliver high-quality web applications, all of whom used their projects as a primary portfolio piece'
     ]
   },
   {
@@ -159,7 +159,7 @@ const experiences = [
     ]
   },
   {
-    title: "Web Developer (Contracted Academic Project)",
+    title: "Web Developer (Internship)",
     company_name: "Third Street Community Center",
     location: "San Jose, California",
     icon: thirdstreet,
@@ -167,9 +167,9 @@ const experiences = [
     date: "January 2020 - May 2020",
     points: [
       'Successfully led the redesign of the Third Street Community Center\'s website using HTML, CSS, and JavaScript',
-      'Improved the user experience by seamlessly integrating YouTube videos and photos into the website design',
-      'Improved the organization and clarity of various pages through the removal of unnecessary text',
-      'Facilitated online donations through the implementation of a donation page with PayPal integration'
+      'Collaborated with designers to implement an engaging and user-friendly website design, improving user experience by 46%',
+      'Boosted user engagement by 230% by seamlessly integrating YouTube videos, photos, and animations into the website',
+      'Streamlined website content by removing unnecessary text and improving the organization and clarity of various pages'
     ]
   },
   {
